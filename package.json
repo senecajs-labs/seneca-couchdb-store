@@ -1,0 +1,35 @@
+{
+  "name": "seneca-couchdb",
+  "version": "0.0.1",
+  "description": "CouchDB storage layer for Seneca framework",
+  "main": "lib/couchdb-store.js",
+  "scripts": {
+    "test": "expresso test/couchdb.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bamse16/seneca-couchdb.git"
+  },
+  "keywords": [
+    "seneca",
+    "couchdb",
+    "plugin"
+  ],
+  "author": "Marius Ursache",
+  "license": "MIT",
+
+  "dependencies": {
+    "seneca":         ">=0.4.1",
+    "felix-couchdb":  ">=1.0.6",
+    "underscore":     "1.1.x",
+    "node-uuid":      "*"
+  },
+
+  "devDependencies": {
+    "expresso":"*",
+    "vows":"*",
+    "async":"*",
+    "eyes":"*",
+    "gex":"*"
+  }
+}
