@@ -1,6 +1,6 @@
 {
   "name": "seneca-couchdb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CouchDB storage layer for Seneca framework",
   "main": "lib/couchdb-store.js",
   "scripts": {
@@ -16,10 +16,10 @@
     "plugin"
   ],
   "author": "Marius Ursache",
+  "contributors": ["Peter Elger <elger.peter@gmail.com> (http://peterelger.com/)"],
   "license": "MIT",
-
   "dependencies": {
-    "seneca":         ">=0.4.1",
+    "seneca":         ">=0.5.9",
     "felix-couchdb":  ">=1.0.6",
     "underscore":     "1.1.x",
     "node-uuid":      "*"

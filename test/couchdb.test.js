@@ -1,31 +1,32 @@
+/*jslint node: true */
+/*global describe:true, it:true*/
 /* Copyright (c) 2012 Marius Ursache */
 
+"use strict";
+
 var seneca = require('seneca');
-var shared = require('seneca/test/store/shared');
+var shared = seneca.test.store.shared;
+var senecaCouchDBStore = require('..');
 
-var config = {
-  log:'print'
-};
-
-var si = seneca(config);
-
-var senecaCouchDBStore = require('seneca-couchdb');
-var senecaCouchDBStoreOpts = {
-    host:'172.16.234.129',
-    port:5984,
-    database:'testdatabase'};
-si.use(senecaCouchDBStore, senecaCouchDBStoreOpts);
+var si = seneca();
+si.use(senecaCouchDBStore, {host:'localhost',
+                            port:5984,
+                            database:'senecatest'});
 
 si.__testcount = 0;
 var testcount = 0;
 
-module.exports = {
-  basictest: (testcount++, shared.basictest(si)),
-  extratest: (testcount++, extratest(si)),
-  closetest: shared.closetest(si,testcount)
-};
 
-function extratest(si) {
-  console.log('EXTRA')
-  si.__testcount++
-}
+describe('couchdb', function(){
+  it('basic', function(done){
+    this.timeout(0);
+    testcount++;
+    shared.basictest(si, done);
+  });
+
+  it('close', function(done){
+    this.timeout(0);
+    shared.closetest(si, testcount, done);
+  });
+});
+
