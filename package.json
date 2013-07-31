@@ -1,5 +1,5 @@
 {
-  "name": "seneca-couchdb",
+  "name": "seneca-couchdb-store",
   "version": "0.0.2",
   "description": "CouchDB storage layer for Seneca framework",
   "main": "lib/couchdb-store.js",
