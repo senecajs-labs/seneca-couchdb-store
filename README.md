@@ -3,7 +3,6 @@
 # seneca-couchdb-store
 
 [![npm version][npm-badge]][npm-url]
-[![Build Status][travis-badge]][travis-url]
 [![Dependency Status][david-badge]][david-url]
 [![Gitter chat][gitter-badge]][gitter-url]
 
@@ -58,9 +57,7 @@ Copyright Marius Ursache and other contributors 2016, Licensed under [MIT][].
 [MIT]: ./LICENSE.txt
 [npm-badge]: https://badge.fury.io/js/seneca-couchdb-store.svg
 [npm-url]: https://badge.fury.io/js/seneca-couchdb-store
-[travis-badge]: https://travis-ci.org/senecajs/seneca-couchdb-store.svg
-[travis-url]: https://travis-ci.org/senecajs/seneca-couchdb-store
-[david-badge]: https://david-dm.org/senecajs/seneca-couchdb-store.svg
-[david-url]: https://david-dm.org/senecajs/seneca-couchdb-store
+[david-badge]: https://david-dm.org/senecajs-labs/seneca-couchdb-store.svg
+[david-url]: https://david-dm.org/senecajs-labs/seneca-couchdb-store
 [gitter-badge]: https://badges.gitter.im/senecajs/seneca.png
 [gitter-url]: https://gitter.im/senecajs/seneca
