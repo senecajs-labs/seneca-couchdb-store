@@ -52,7 +52,7 @@ The [Senecajs org][] encourage open participation. If you feel you can help in a
 Copyright Marius Ursache and other contributors 2016, Licensed under [MIT][].
 
 [Seneca]: http://senecajs.org/
-[SenecaLogo]: https://camo.githubusercontent.com/4a0178ff2abf26f9214d4d98bc23eec356ced357/687474703a2f2f73656e6563616a732e6f72672f66696c65732f6173736574732f73656e6563612d6c6f676f2e706e67
+[SenecaLogo]: http://senecajs.org/files/assets/seneca-logo.png
 [Senecajs org]: https://github.com/senecajs/
 [MIT]: ./LICENSE.txt
 [npm-badge]: https://badge.fury.io/js/seneca-couchdb-store.svg
